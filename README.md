@@ -1,5 +1,4 @@
-
-Here are [slides from a talk](https://petrelharp.github.io/uiuc-feb-2021/uiuc-feb-2021.slides.html)
-at the University of Illinois Urbana-Champaign,
-Program in Ecology, Evolution & Conservation Biology seminar,
-February 3rd, 2021.
+Here are [slides from a talk](https://petrelharp.github.io/osu-may-2021/osu-may-2021.slides.html)
+at Oregon State University's
+Center for Genome Research and Biocomputing,
+May 26th, 2021.
