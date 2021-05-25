@@ -99,8 +99,8 @@
 <ol type="1">
 <li><p>Which locations along the genome have been the recent targets of positive natural selection? <em>(identifying sweeps)</em></p></li>
 <li><p>Where did this individual come from? <em>(inferring location)</em></p></li>
-<li><p>What forces contribute to the variation in genetic diversity along the genome?</p></li>
-<li><p>How do organisms disperse across the landscape?</p></li>
+<li><p>What forces contribute to the variation in genetic diversity along the genome? <em>(explaining variation in diversity)</em></p></li>
+<li><p>How do organisms disperse across the landscape? <em>(dispersal maps)</em></p></li>
 </ol>
 </section>
 <section id="inverse-problems" class="slide level2">
@@ -133,183 +133,34 @@
 </ul>
 </section></section>
 <section>
-<section id="examples" class="title-slide slide level1">
-<h1>Examples</h1>
-
-</section>
-<section id="example-1-identifying-sweeps" class="slide level2">
-<h2>Example 1: identifying sweeps</h2>
-<figure>
-<img data-src="figs/shic_images.png" alt="https://academic.oup.com/g3journal/article/8/6/1959/6028059" /><figcaption aria-hidden="true">https://academic.oup.com/g3journal/article/8/6/1959/6028059</figcaption>
-</figure>
-</section>
-<section class="slide level2">
-
-<figure>
-<img data-src="figs/shic_cnn.png" alt="https://academic.oup.com/g3journal/article/8/6/1959/6028059" /><figcaption aria-hidden="true">https://academic.oup.com/g3journal/article/8/6/1959/6028059</figcaption>
-</figure>
-</section>
-<section id="example-2-predicting-location" class="slide level2">
-<h2>Example 2: predicting location</h2>
-<p><img data-src="figs/spatial_pedigree.png" /></p>
-<div class="caption">
-<p>from <a href="https://arxiv.org/abs/1904.09847">Bradburd &amp; Ralph 2019</a></p>
-</div>
-</section>
-<section id="locator-battey-et-al-2020" class="slide level2">
-<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
-<p><img data-src="figs/locator_spatial_tree_sequence.png" /></p>
-</section>
-<section id="locator-battey-et-al-2020-1" class="slide level2">
-<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
-<p><img data-src="figs/locator_methods.png" /></p>
-</section>
-<section id="locator-battey-et-al-2020-2" class="slide level2">
-<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
-<p><img data-src="figs/locator_results.png" /></p>
-</section>
-<section id="example-3-landscapes-of-diversity" class="slide level2">
-<h2>Example 3: landscapes of diversity</h2>
-<figure>
-<img data-src="figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png" alt="Langley et al 2012" /><figcaption aria-hidden="true">Langley et al 2012</figcaption>
-</figure>
-</section>
-<section id="diversity-correlates-with-recombination-rate" class="slide level2">
-<h2>Diversity correlates with recombination rate</h2>
-<div class="columns">
-<div class="column" style="width:80%;">
-<figure>
-<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png" style="width:85.0%" alt="Corbett-Detig et al" /><figcaption aria-hidden="true">Corbett-Detig et al</figcaption>
-</figure>
-</div><div class="column" style="width:20%;">
-<p><em>Hudson 1994; Cutter &amp; Payseur 2013; Corbett-Detig et al 2015</em></p>
-</div>
-</div>
-</section>
-<section id="the-mimulus-aurantiacus-species-complex" class="slide level2">
-<h2>The <em>Mimulus aurantiacus</em> species complex</h2>
-<div class="centered">
-<p><img data-src="figs/aurantiacus/phylogeny.png" /></p>
-</div>
-</section>
-<section class="slide level2">
-
-<div class="columns">
-<div class="column" style="width:80%;">
-<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png" /></p>
-</div><div class="column" style="width:20%;">
-<p><img data-src="figs/aurantiacus/labeled_phylogeny_aura.png" style="width:250.0%" /></p>
-</div>
-</div>
-</section>
-<section id="simulations" class="slide level2">
-<h2>Simulations</h2>
-<div class="columns">
-<div class="column" style="width:70%;">
-<ul>
-<li><p><span class="math inline">\(N=10,000\)</span> diploids</p></li>
-<li><p>burn-in for <span class="math inline">\(10N\)</span> generations</p></li>
-<li><p>population split, with either:</p>
-<ul>
-<li>neutral</li>
-<li>background selection</li>
-<li>selection against introgressed alleles</li>
-<li>positive selection</li>
-<li>local adaptation</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:30%;">
-<div class="flushright">
-<p><img data-src="figs/murillo.jpeg" /></p>
-<div class="caption">
-<p>Murillo Rodrigues</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<!--
-Fig 7. Genomic landscapes simulated under different divergence histories.
-Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
-
-![](figs/aurantiacus/sim_results.png)
--->
-<p><img data-src="figs/sim_mimulus_landscapes.svg" style="width:100.0%" /></p>
-<div class="flushright">
-<div class="caption">
-<p>From <a href="https://doi.org/10.1371/journal.pbio.3000391">Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers</a>, Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld; PLoS Bio 2019.</p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-<p>Conclusions:</p>
-<ul>
-<li><strike>neutral</strike></li>
-<li><strike>background selection</strike></li>
-<li><strike>selection against introgressed alleles</strike></li>
-<li>positive selection</li>
-<li>local adaptation</li>
-</ul>
-<div class="flushright">
-<div class="caption">
-<p>From <a href="https://doi.org/10.1371/journal.pbio.3000391">Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers</a>, Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld; PLoS Bio 2019.</p>
-</div>
-</div>
-</section>
-<section id="example-4-dispersal-maps" class="slide level2">
-<h2>Example 4: dispersal maps</h2>
-<figure>
-<img data-src="figs/spacetree_1.png" alt="trees in space, by CJ Battey" /><figcaption aria-hidden="true">trees in space, by CJ Battey</figcaption>
-</figure>
-<div class="caption">
-<p>by <a href="cjbattey.com">CJ Battey</a></p>
-</div>
-</section>
-<section class="slide level2">
-
-<figure>
-<img data-src="figs/everyone-ibd.png" alt="genetic and geographic distance for desert tortoises" /><figcaption aria-hidden="true">genetic and geographic distance for desert tortoises</figcaption>
-</figure>
-<ul>
-<li>genetic versus geographic distance between pairs of 272 desert tortoises (McCartney-Melstad, Shaffer)</li>
-<li>clouds are comparisons within/between the two colors</li>
-</ul>
-</section>
-<section class="slide level2">
-
-<p><img data-src="figs/range-abundance-map.jpeg" /></p>
-</section>
-<section class="slide level2">
-
-<p><img data-src="figs/drecp-pref-alt-snapshot.png" /></p>
-</section></section>
-<section>
 <section id="what-do-we-need" class="title-slide slide level1">
 <h1>What do we need</h1>
+<!--
+## Ok, then: selection.
 
-</section>
-<section id="ok-then-selection." class="slide level2">
-<h2>Ok, then: selection.</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>To test theories and fit models, we need <em>simulations</em> with realistic</p>
-<ol type="1">
-<li>population sizes,</li>
-<li>ecology,</li>
-<li>genomes,</li>
-<li>selective pressures,</li>
-<li>histories, and</li>
-<li>geography.</li>
-</ol>
-</div><div class="column" style="width:50%;">
-<figure>
-<img data-src="figs/aurantiacus/just_map.png" alt="map of mimulus" /><figcaption aria-hidden="true">map of mimulus</figcaption>
-</figure>
-</div>
-</div>
+:::: {.columns}
+:::::::: {.column width=50%}
+
+
+To test theories and fit models, we need *simulations* with realistic
+
+1. population sizes,
+2. ecology,
+2. genomes,
+3. selective pressures,
+4. histories, and
+5. geography.
+
+
+::::
+:::::::: {.column width=50%}
+
+![map of mimulus](figs/aurantiacus/just_map.png)
+
+::::
+::::::::
+
+-->
 </section>
 <section id="wish-list" class="slide level2">
 <h2>Wish list:</h2>
@@ -367,6 +218,26 @@ from millions of individuals.</p>
 </section>
 <section id="enter-slim" class="slide level2">
 <h2>Enter SLiM</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>by Ben Haller and Philipp Messer</p>
+<ul>
+<li>a forwards simulator</li>
+<li>arbitary life cycles</li>
+<li>continuous geography and local interactions</li>
+<li>distributions of fitness coefficients</li>
+<li>quantitative traits take more work</li>
+<li>anything is possible</li>
+</ul>
+<div class="caption">
+<p><img data-src="figs/ben-haller.jpg" alt="Ben Haller" /> <em>Ben Haller</em></p>
+</div>
+</div><div class="column" style="width:50%;">
+<figure>
+<img data-src="figs/slim-gui.png" alt="SLiM GUI" /><figcaption aria-hidden="true">SLiM GUI</figcaption>
+</figure>
+</div>
+</div>
 </section>
 <section id="section-1" class="slide level2" data-background-image="figs/slim_screenshot.png" data-background-position="center" data-background-size="100%">
 <h2 data-background-image="figs/slim_screenshot.png" data-background-position="center" data-background-size="100%"></h2>
@@ -387,7 +258,7 @@ from millions of individuals.</p>
 <li><s>separate sexes</s>*</li>
 <li><s>selfing</s></li>
 <li>polyploidy*</li>
-<li>species interactions*</li>
+<li>species interactions <strong>(coming soon!)</strong></li>
 </ul>
 <p><strong>Geography:</strong></p>
 <ul>
@@ -638,7 +509,7 @@ using msprime [Kelleher et al., 2016], and the sizes of the resulting files plot
 </div>
 </div>
 <figure>
-<img data-src="figs/ts_ex/tree_sequence_genotype_and_tree.png" style="width:70.0%" alt="genotypes and a tree" /><figcaption aria-hidden="true">genotypes and a tree</figcaption>
+<img data-src="figs/ts_ex/tree_sequence_genotype_and_tree.png" style="width:60.0%" alt="genotypes and a tree" /><figcaption aria-hidden="true">genotypes and a tree</figcaption>
 </figure>
 </section>
 <section id="fast-genotype-statistics-too" class="slide level2">
@@ -732,43 +603,212 @@ using msprime [Kelleher et al., 2016], and the sizes of the resulting files plot
 <p><em>Runtime:</em> 8 hours</p>
 </section></section>
 <section>
+<section id="example-1-identifying-sweeps" class="title-slide slide level1">
+<h1>Example 1: identifying sweeps</h1>
+<figure>
+<img data-src="figs/shic_images.png" alt="https://academic.oup.com/g3journal/article/8/6/1959/6028059" /><figcaption aria-hidden="true">https://academic.oup.com/g3journal/article/8/6/1959/6028059</figcaption>
+</figure>
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figs/shic_cnn.png" alt="https://academic.oup.com/g3journal/article/8/6/1959/6028059" /><figcaption aria-hidden="true">https://academic.oup.com/g3journal/article/8/6/1959/6028059</figcaption>
+</figure>
+</section></section>
+<section>
+<section id="example-2-predicting-location" class="title-slide slide level1">
+<h1>Example 2: predicting location</h1>
+<p><img data-src="figs/spatial_pedigree.png" /></p>
+<div class="caption">
+<p>from <a href="https://arxiv.org/abs/1904.09847">Bradburd &amp; Ralph 2019</a></p>
+</div>
+</section>
+<section id="locator-battey-et-al-2020" class="slide level2">
+<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
+<p><img data-src="figs/locator_spatial_tree_sequence.png" /></p>
+</section>
+<section id="locator-battey-et-al-2020-1" class="slide level2">
+<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
+<p><img data-src="figs/locator_methods.png" /></p>
+</section>
+<section id="locator-battey-et-al-2020-2" class="slide level2">
+<h2>locator (<a href="https://elifesciences.org/articles/54507">Battey et al 2020</a>)</h2>
+<p><img data-src="figs/locator_results.png" /></p>
+</section></section>
+<section>
+<section id="example-3-landscapes-of-diversity" class="title-slide slide level1">
+<h1>Example 3: landscapes of diversity</h1>
+<figure>
+<img data-src="figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png" alt="Langley et al 2012" /><figcaption aria-hidden="true">Langley et al 2012</figcaption>
+</figure>
+</section>
+<section id="diversity-correlates-with-recombination-rate" class="slide level2">
+<h2>Diversity correlates with recombination rate</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<figure>
+<img data-src="figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png" style="width:85.0%" alt="Corbett-Detig et al" /><figcaption aria-hidden="true">Corbett-Detig et al</figcaption>
+</figure>
+</div><div class="column" style="width:20%;">
+<p><em>Hudson 1994; Cutter &amp; Payseur 2013; Corbett-Detig et al 2015</em></p>
+</div>
+</div>
+</section>
+<section id="the-mimulus-aurantiacus-species-complex" class="slide level2">
+<h2>The <em>Mimulus aurantiacus</em> species complex</h2>
+<div class="centered">
+<p><img data-src="figs/aurantiacus/phylogeny.png" /></p>
+</div>
+</section>
+<section class="slide level2">
+
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><img data-src="figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png" /></p>
+</div><div class="column" style="width:20%;">
+<p><img data-src="figs/aurantiacus/labeled_phylogeny_aura.png" style="width:250.0%" /></p>
+</div>
+</div>
+</section>
+<section id="simulations" class="slide level2">
+<h2>Simulations</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<ul>
+<li><p><span class="math inline">\(N=10,000\)</span> diploids</p></li>
+<li><p>burn-in for <span class="math inline">\(10N\)</span> generations</p></li>
+<li><p>population split, with either:</p>
+<ul>
+<li>neutral</li>
+<li>background selection</li>
+<li>selection against introgressed alleles</li>
+<li>positive selection</li>
+<li>local adaptation</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:30%;">
+<div class="flushright">
+<p><img data-src="figs/murillo.jpeg" /></p>
+<div class="caption">
+<p>Murillo Rodrigues</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<!--
+Fig 7. Genomic landscapes simulated under different divergence histories.
+Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
+
+![](figs/aurantiacus/sim_results.png)
+-->
+<p><img data-src="figs/sim_mimulus_landscapes.svg" style="width:100.0%" /></p>
+<div class="flushright">
+<div class="caption">
+<p>From <a href="https://doi.org/10.1371/journal.pbio.3000391">Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers</a>, Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld; PLoS Bio 2019.</p>
+</div>
+</div>
+</section>
+<section class="slide level2">
+
+<p>Conclusions:</p>
+<ul>
+<li><strike>neutral</strike></li>
+<li><strike>background selection</strike></li>
+<li><strike>selection against introgressed alleles</strike></li>
+<li>positive selection</li>
+<li>local adaptation</li>
+</ul>
+<div class="flushright">
+<div class="caption">
+<p>From <a href="https://doi.org/10.1371/journal.pbio.3000391">Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers</a>, Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld; PLoS Bio 2019.</p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="example-4-dispersal-maps" class="title-slide slide level1">
+<h1>Example 4: dispersal maps</h1>
+<!--
+![trees in space, by CJ Battey](figs/spacetree_1.png)
+
+::: {.caption}
+by [CJ Battey](cjbattey.com)
+:::
+-->
+</section>
+<section class="slide level2">
+
+<figure>
+<img data-src="figs/everyone-ibd.png" alt="genetic and geographic distance for desert tortoises" /><figcaption aria-hidden="true">genetic and geographic distance for desert tortoises</figcaption>
+</figure>
+<ul>
+<li>genetic versus geographic distance between pairs of 272 desert tortoises (McCartney-Melstad, Shaffer)</li>
+<li>clouds are comparisons within/between the two colors</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p><img data-src="figs/range-abundance-map.jpeg" /></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="figs/drecp-pref-alt-snapshot.png" /></p>
+</section></section>
+<section>
 <section id="wrap-up" class="title-slide slide level1">
 <h1>Wrap-up</h1>
 
 </section>
-<section id="other-uses-for-population-simulation" class="slide level2">
-<h2>Other uses for population simulation</h2>
+<section id="software-development-goals" class="slide level2">
+<h2>Software development goals</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
-<li><p>train inference methods</p></li>
-<li><p>predict management outcomes</p></li>
-<li><p>do power analyses</p></li>
-<li><p>develop intuition</p></li>
+<li>open</li>
+<li>welcoming and supportive</li>
+<li>reproducible and well-tested</li>
+<li>backwards compatible</li>
+<li>well-documented</li>
+<li>capacity building</li>
 </ul>
+<div class="centered">
+<figure>
+<img data-src="figs/popsim.png" style="width:50.0%" alt="popsim logo" /><figcaption aria-hidden="true">popsim logo</figcaption>
+</figure>
+</div>
 </div><div class="column" style="width:50%;">
 <div class="centered">
 <figure>
 <img data-src="figs/tskit_logo.png" style="width:60.0%" alt="tskit logo" /><figcaption aria-hidden="true">tskit logo</figcaption>
 </figure>
 <figure>
-<img data-src="figs/slim_logo.png" style="width:100.0%" alt="SLiM logo" /><figcaption aria-hidden="true">SLiM logo</figcaption>
+<img data-src="figs/slim_logo.png" style="width:80.0%" alt="SLiM logo" /><figcaption aria-hidden="true">SLiM logo</figcaption>
 </figure>
 </div>
 </div>
 </div>
 </section>
-<section id="section-3" class="slide level2">
-<h2></h2>
+<section id="thanks" class="slide level2">
+<h2>Thanks!</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>The Co-Lab:</p>
 <ul>
 <li>Andy Kern</li>
 <li>Matt Lukac</li>
 <li>Murillo Rodrigues</li>
-<li>Jared Galloway</li>
+<li>Victoria Caudill</li>
+<li>Anastasia Teterina</li>
+<li>Jeff Adrion <!--
+- Saurabh Belsare
+- Chris Smith
+- Gilia Patterson
+- Gabby Coffing
+--></li>
 <li>CJ Battey</li>
+<li>Jared Galloway</li>
+<li>the rest of the Co-Lab</li>
 </ul>
 <p>Funding:</p>
 <ul>
@@ -779,7 +819,6 @@ using msprime [Kelleher et al., 2016], and the sizes of the resulting files plot
 </ul>
 </div><div class="column" style="width:50%;">
 <div style="font-size: 85%; margin-top: -40px;">
-<p>Other collaborators:</p>
 <ul>
 <li>Jerome Kelleher</li>
 <li>Ben Haller</li>
@@ -794,13 +833,17 @@ using msprime [Kelleher et al., 2016], and the sizes of the resulting files plot
 <li>Brad Shaffer</li>
 <li>Sean Stankowski</li>
 <li>Matt Streisfeld</li>
-<li>Anastasia Teterina</li>
 </ul>
+</div>
+<div class="floatright">
+<figure>
+<img data-src="figs/tskit_logo.png" style="width:40.0%" alt="tskit logo" /><figcaption aria-hidden="true">tskit logo</figcaption>
+</figure>
 </div>
 </div>
 </div>
 </section>
-<section id="section-4" class="slide level2" data-background-image="figs/guillemots_thanks.png" data-background-position="center" data-background-size="50%">
+<section id="section-3" class="slide level2" data-background-image="figs/guillemots_thanks.png" data-background-position="center" data-background-size="50%">
 <h2 data-background-image="figs/guillemots_thanks.png" data-background-position="center" data-background-size="50%"></h2>
 </section></section>
     </div>

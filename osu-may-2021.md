@@ -28,9 +28,9 @@ date: "Center for Genome Research and Biocomputing <br/> Oregon State // 26 May 
     *(inferring location)*
 
 3. What forces contribute to the variation in genetic diversity
-    along the genome?
+    along the genome? *(explaining variation in diversity)*
 
-4. How do organisms disperse across the landscape?
+4. How do organisms disperse across the landscape? *(dispersal maps)*
 
 
 ## Inverse problems
@@ -64,181 +64,9 @@ date: "Center for Genome Research and Biocomputing <br/> Oregon State // 26 May 
 - deep learning
 
 
-# Examples
-
-## Example 1: identifying sweeps
-
-
-![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_images.png)
-
------------
-
-![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_cnn.png)
-
-
-## Example 2: predicting location
-
-![](figs/spatial_pedigree.png)
-
-::::: {.caption}
-from [Bradburd & Ralph 2019](https://arxiv.org/abs/1904.09847)
-:::::
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_spatial_tree_sequence.png)
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_methods.png)
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_results.png)
-
-
-## Example 3: landscapes of diversity
-
-![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
-
-
-## Diversity correlates with recombination rate
-
-:::: {.columns}
-:::::::: {.column width=80%}
-
-
-![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=85%}
-
-::::
-:::::::: {.column width=20%}
-
-
-*Hudson 1994; Cutter & Payseur 2013; Corbett-Detig et al 2015*
-
-::::
-::::::::
-
-## The *Mimulus aurantiacus* species complex
-
-::: {.centered}
-![](figs/aurantiacus/phylogeny.png)
-:::
-
----------------------
-
-:::: {.columns}
-:::::::: {.column width=80%}
-
-![](figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png)
-
-::::
-:::::::: {.column width=20%}
-
-![](figs/aurantiacus/labeled_phylogeny_aura.png){width="250%"}
-
-::::
-::::::::
-
-
-## Simulations
-
-::: {.columns}
-::::::: {.column width="70%"}
-
-- $N=10,000$ diploids
-- burn-in for $10N$ generations
-- population split, with either:
-    
-    * neutral
-    * background selection
-    * selection against introgressed alleles
-    * positive selection
-    * local adaptation
-
-:::
-::::::: {.column width="30%"}
-
-:::: {.flushright}
-![](figs/murillo.jpeg)
-
-::::: {.caption}
-Murillo Rodrigues
-:::::
-::::
-
-:::
-:::::::
-
-
-------------------
-
-<!--
-Fig 7. Genomic landscapes simulated under different divergence histories.
-Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
-
-![](figs/aurantiacus/sim_results.png)
--->
-
-![](figs/sim_mimulus_landscapes.svg){width=100%}
-
-::::: {.flushright}
-
-::::::::::: {.caption}
-From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
-Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
-PLoS Bio 2019.
-:::::::::::
-:::::
-
-------------
-
-Conclusions:
-
-* <strike>neutral</strike>
-* <strike>background selection</strike>
-* <strike>selection against introgressed alleles</strike>
-* positive selection
-* local adaptation
-
-::::: {.flushright}
-
-::::::::::: {.caption}
-From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
-Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
-PLoS Bio 2019.
-:::::::::::
-:::::
-
-
-
-## Example 4: dispersal maps
-
-
-![trees in space, by CJ Battey](figs/spacetree_1.png)
-
-::: {.caption}
-by [CJ Battey](cjbattey.com)
-:::
-
--------------
-
-![genetic and geographic distance for desert tortoises](figs/everyone-ibd.png)
-
-- genetic versus geographic distance between pairs of 272 desert tortoises (McCartney-Melstad, Shaffer)
-- clouds are comparisons within/between the two colors
-
------------
-
-![](figs/range-abundance-map.jpeg)
-
------------
-
-![](figs/drecp-pref-alt-snapshot.png)
-
-
 # What do we need
 
+<!--
 ## Ok, then: selection.
 
 :::: {.columns}
@@ -262,6 +90,8 @@ To test theories and fit models, we need *simulations* with realistic
 
 ::::
 ::::::::
+
+-->
 
 ## Wish list:
 
@@ -327,6 +157,35 @@ from millions of individuals.
 
 ## Enter SLiM
 
+
+::: {.columns}
+::::::: {.column width=50%}
+
+
+by Ben Haller and Philipp Messer
+
+- a forwards simulator
+- arbitary life cycles
+- continuous geography and local interactions
+- distributions of fitness coefficients
+- quantitative traits take more work
+- anything is possible
+
+:::: {.caption}
+![Ben Haller](figs/ben-haller.jpg)
+*Ben Haller*
+::::
+
+:::
+::::::: {.column width=50%}
+
+![SLiM GUI](figs/slim-gui.png)
+
+:::
+:::::::
+
+
+
 ## {data-background-image="figs/slim_screenshot.png" data-background-position=center data-background-size=100%}
 
 ##
@@ -346,7 +205,7 @@ from millions of individuals.
 - <s>separate sexes</s>*
 - <s>selfing</s>
 - polyploidy*
-- species interactions*
+- species interactions **(coming soon!)**
 
 **Geography:**
 
@@ -600,7 +459,7 @@ $O(N + T + M)$ things
 :::
 :::::::
 
-![genotypes and a tree](figs/ts_ex/tree_sequence_genotype_and_tree.png){width=70%}
+![genotypes and a tree](figs/ts_ex/tree_sequence_genotype_and_tree.png){width=60%}
 
 ## Fast genotype statistics, too!
 
@@ -714,23 +573,199 @@ But, with a few tricks...
 *Runtime:* 8 hours
 
 
+# Example 1: identifying sweeps
+
+
+![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_images.png)
+
+-----------
+
+![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_cnn.png)
+
+
+# Example 2: predicting location
+
+![](figs/spatial_pedigree.png)
+
+::::: {.caption}
+from [Bradburd & Ralph 2019](https://arxiv.org/abs/1904.09847)
+:::::
+
+## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
+
+![](figs/locator_spatial_tree_sequence.png)
+
+## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
+
+![](figs/locator_methods.png)
+
+## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
+
+![](figs/locator_results.png)
+
+
+# Example 3: landscapes of diversity
+
+![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
+
+
+## Diversity correlates with recombination rate
+
+:::: {.columns}
+:::::::: {.column width=80%}
+
+
+![Corbett-Detig et al](figs/from_the_literature/corbett-detig-divergence-recomb-all-species.png){width=85%}
+
+::::
+:::::::: {.column width=20%}
+
+
+*Hudson 1994; Cutter & Payseur 2013; Corbett-Detig et al 2015*
+
+::::
+::::::::
+
+## The *Mimulus aurantiacus* species complex
+
+::: {.centered}
+![](figs/aurantiacus/phylogeny.png)
+:::
+
+---------------------
+
+:::: {.columns}
+:::::::: {.column width=80%}
+
+![](figs/aurantiacus/rising_landscapes/divergence_by_node_aura_LG3.png)
+
+::::
+:::::::: {.column width=20%}
+
+![](figs/aurantiacus/labeled_phylogeny_aura.png){width="250%"}
+
+::::
+::::::::
+
+
+## Simulations
+
+::: {.columns}
+::::::: {.column width="70%"}
+
+- $N=10,000$ diploids
+- burn-in for $10N$ generations
+- population split, with either:
+    
+    * neutral
+    * background selection
+    * selection against introgressed alleles
+    * positive selection
+    * local adaptation
+
+:::
+::::::: {.column width="30%"}
+
+:::: {.flushright}
+![](figs/murillo.jpeg)
+
+::::: {.caption}
+Murillo Rodrigues
+:::::
+::::
+
+:::
+:::::::
+
+
+------------------
+
+<!--
+Fig 7. Genomic landscapes simulated under different divergence histories.
+Each row of plots shows patterns of within- and between-population variation (π, dxy, and FST) across the chromosome (500-kb windows) at 5 time points (N generations, where N = 10,000) during one of the scenarios The selection parameter (Ns, where s = Ns/N), proportion of deleterious (−) and positive mutations (+), and number of migrants per generation (Nm; 0 unless stated) for these simulations are as follows: (i) neutral divergence (no selection), (ii) BGS (−Ns = 100; −prop = 0.1), (iii) BDMI (−Ns = 100, −prop = 0.05, Nm = 0.1), (iv) positive selection (+Ns = 100, +prop = 0.001), (v) BGS and positive selection (−Ns = 100, −prop = 0.1; +Ns = 100, +prop = 0.005), and (vi) local adaptation (+Ns = 100, +prop = 0.001, Nm = 0.1). The gray boxes in the first column show the areas of the chromosome that are experiencing selection, while the white central area evolves neutrally. Note that π (in populations a and b) and dxy have been mean centered so they can be viewed on the same scale. Uncentered values and additional simulations with different parameter combinations and more time points can be found in S13 Fig. BDMI, Bateson-Dobzhansky-Muller incompatibility; BGS, background selection.
+
+![](figs/aurantiacus/sim_results.png)
+-->
+
+![](figs/sim_mimulus_landscapes.svg){width=100%}
+
+::::: {.flushright}
+
+::::::::::: {.caption}
+From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
+Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
+PLoS Bio 2019.
+:::::::::::
+:::::
+
+------------
+
+Conclusions:
+
+* <strike>neutral</strike>
+* <strike>background selection</strike>
+* <strike>selection against introgressed alleles</strike>
+* positive selection
+* local adaptation
+
+::::: {.flushright}
+
+::::::::::: {.caption}
+From [Widespread selection and gene flow shape the genomic landscape during a radiation of monkeyflowers](https://doi.org/10.1371/journal.pbio.3000391),
+Stankowski, Chase, Fuiten, Rodrigues, Ralph, and Streisfeld;
+PLoS Bio 2019.
+:::::::::::
+:::::
+
+
+
+# Example 4: dispersal maps
+
+
+<!--
+![trees in space, by CJ Battey](figs/spacetree_1.png)
+
+::: {.caption}
+by [CJ Battey](cjbattey.com)
+:::
+-->
+
+-------------
+
+![genetic and geographic distance for desert tortoises](figs/everyone-ibd.png)
+
+- genetic versus geographic distance between pairs of 272 desert tortoises (McCartney-Melstad, Shaffer)
+- clouds are comparisons within/between the two colors
+
+-----------
+
+![](figs/range-abundance-map.jpeg)
+
+-----------
+
+![](figs/drecp-pref-alt-snapshot.png)
+
+
+
 # Wrap-up
 
 
 
-## Other uses for population simulation
+## Software development goals
 
 ::: {.columns}
 :::::: {.column width=50%}
 
-- train inference methods
+- open
+- welcoming and supportive
+- reproducible and well-tested
+- backwards compatible
+- well-documented
+- capacity building
 
-- predict management outcomes
-
-- do power analyses
-
-- develop intuition
-
+::: {.centered}
+![popsim logo](figs/popsim.png){width=50%}
+:::
 
 :::
 :::::: {.column width=50%}
@@ -739,25 +774,34 @@ But, with a few tricks...
 ::: {.centered}
 ![tskit logo](figs/tskit_logo.png){width=60%}
 
-![SLiM logo](figs/slim_logo.png){width=100%}
+![SLiM logo](figs/slim_logo.png){width=80%}
 :::
 
 :::
 ::::::
 
 
-## 
+## Thanks!
 
 :::: {.columns}
 :::::::: {.column width=50%}
 
-The Co-Lab:
 
 - Andy Kern
 - Matt Lukac
 - Murillo Rodrigues 
-- Jared Galloway
+- Victoria Caudill
+- Anastasia Teterina
+- Jeff Adrion
+<!--
+- Saurabh Belsare
+- Chris Smith
+- Gilia Patterson
+- Gabby Coffing
+-->
 - CJ Battey
+- Jared Galloway
+- the rest of the Co-Lab
 
 Funding:
 
@@ -771,7 +815,6 @@ Funding:
 
 <div style="font-size: 85%; margin-top: -40px;">
 
-Other collaborators:
 
 - Jerome Kelleher
 - Ben Haller
@@ -786,9 +829,12 @@ Other collaborators:
 - Brad Shaffer
 - Sean Stankowski
 - Matt Streisfeld
-- Anastasia Teterina
 
 </div>
+
+::: {.floatright}
+![tskit logo](figs/tskit_logo.png){width=40%}
+:::
 
 ::::
 ::::::::
