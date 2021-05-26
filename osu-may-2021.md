@@ -9,8 +9,8 @@ date: "Center for Genome Research and Biocomputing <br/> Oregon State // 26 May 
 
 ## Outline of the talk
 
-1. Big picture
-2. Tools
+1. What do we need simulations for?
+2. The tree sequence
 3. Applications
 
 
@@ -21,14 +21,14 @@ date: "Center for Genome Research and Biocomputing <br/> Oregon State // 26 May 
 
 ## Some questions
 
-1. Which locations along the genome have been the recent targets
+1. What forces contribute to the variation in genetic diversity
+    along the genome? *(explaining variation in diversity)*
+
+2. Which locations along the genome have been the recent targets
     of positive natural selection? *(identifying sweeps)*
 
-2. Where did this individual come from?
+3. Where did this individual come from?
     *(inferring location)*
-
-3. What forces contribute to the variation in genetic diversity
-    along the genome? *(explaining variation in diversity)*
 
 4. How do organisms disperse across the landscape? *(dispersal maps)*
 
@@ -167,8 +167,7 @@ by Ben Haller and Philipp Messer
 - a forwards simulator
 - arbitary life cycles
 - continuous geography and local interactions
-- distributions of fitness coefficients
-- quantitative traits take more work
+- quantitative traits
 - anything is possible
 
 :::: {.caption}
@@ -180,6 +179,8 @@ by Ben Haller and Philipp Messer
 ::::::: {.column width=50%}
 
 ![SLiM GUI](figs/slim-gui.png)
+
+[messerlab.org/SLiM](https://messerlab.org/SLiM/)
 
 :::
 :::::::
@@ -245,6 +246,27 @@ by Ben Haller and Philipp Messer
 :::::::
 
 :::
+
+## 
+
+- <s>Whole genomes,</s>*
+
+. . .
+
+Idea: if we record *how everyone is related to everyone else*,
+
+. . .
+
+we can put down neutral mutations
+*after the simulation is over*
+instead of carrying them along.
+
+. . .
+
+Since neutral mutations don't affect demography,
+
+this is *equivalent* to having kept track of them throughout.
+
 
 
 <!-- Tree sequences -->
@@ -536,10 +558,6 @@ But, with a few tricks...
 ![SLiM logo](figs/slim_logo.png){width=100%}
 :::
 
-<!--
-{data-background-image="figs/slim_timing_no_msprime.png" data-background-size=40% data-background-position=left}
--->
-
 :::
 :::::: {.column width=60%}
 
@@ -573,38 +591,7 @@ But, with a few tricks...
 *Runtime:* 8 hours
 
 
-# Example 1: identifying sweeps
-
-
-![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_images.png)
-
------------
-
-![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_cnn.png)
-
-
-# Example 2: predicting location
-
-![](figs/spatial_pedigree.png)
-
-::::: {.caption}
-from [Bradburd & Ralph 2019](https://arxiv.org/abs/1904.09847)
-:::::
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_spatial_tree_sequence.png)
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_methods.png)
-
-## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
-
-![](figs/locator_results.png)
-
-
-# Example 3: landscapes of diversity
+# Example 1: landscapes of diversity
 
 ![Langley et al 2012](figs/from_the_literature/langley-et-al-2012-chr3-pi-and-rho.png)
 
@@ -719,6 +706,47 @@ PLoS Bio 2019.
 
 
 
+# Example 2: identifying sweeps
+
+
+![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_images.png)
+
+-----------
+
+![https://academic.oup.com/g3journal/article/8/6/1959/6028059](figs/shic_cnn.png)
+
+
+# Example 3: predicting location
+
+![](figs/spatial_pedigree.png)
+
+::::: {.caption}
+from [Bradburd & Ralph 2019](https://arxiv.org/abs/1904.09847)
+:::::
+
+## 
+
+::: {.centered}
+![](figs/locator_methods.png)
+
+[![](figs/locator_paper.png){width=50%}](https://elifesciences.org/articles/54507)
+![](figs/cjb.jpg){width=20%}
+:::
+
+## locator ([Battey et al 2020](https://elifesciences.org/articles/54507))
+
+![](figs/locator_results.png)
+
+## 
+
+![](figs/locator_spatial_tree_sequence.png)
+
+:::: {.flushright}
+::::: {.caption}
+from [Battey et al 2020](https://elifesciences.org/articles/54507)
+:::::
+::::
+
 # Example 4: dispersal maps
 
 
@@ -750,7 +778,6 @@ by [CJ Battey](cjbattey.com)
 # Wrap-up
 
 
-
 ## Software development goals
 
 ::: {.columns}
@@ -763,9 +790,11 @@ by [CJ Battey](cjbattey.com)
 - well-documented
 - capacity building
 
+<!--
 ::: {.centered}
 ![popsim logo](figs/popsim.png){width=50%}
 :::
+-->
 
 :::
 :::::: {.column width=50%}
@@ -774,7 +803,9 @@ by [CJ Battey](cjbattey.com)
 ::: {.centered}
 ![tskit logo](figs/tskit_logo.png){width=60%}
 
-![SLiM logo](figs/slim_logo.png){width=80%}
+[tskit.dev](https://tskit.dev)
+
+<!-- ![SLiM logo](figs/slim_logo.png){width=80%} -->
 :::
 
 :::
@@ -834,6 +865,7 @@ Funding:
 
 ::: {.floatright}
 ![tskit logo](figs/tskit_logo.png){width=40%}
+![SLiM logo](figs/slim_logo.png){width=40%}
 :::
 
 ::::
